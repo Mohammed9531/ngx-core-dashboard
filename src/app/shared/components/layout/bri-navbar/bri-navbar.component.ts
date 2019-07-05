@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./bri-navbar.component.scss']
 })
 export class BriNavbarComponent {
-
   /**
    * @public
    * @type: boolean
