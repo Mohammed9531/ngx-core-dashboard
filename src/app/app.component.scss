@@ -1,6 +1,11 @@
 .bri-container {
+    padding: 0;
     color: #fff;
-    background-color: #000;
+
+    .bri-navbar-container {
+        margin: 0;
+        padding: 0;
+    }
 
     .bri-inner-container {
         margin: 20px;

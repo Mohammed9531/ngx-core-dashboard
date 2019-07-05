@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * @author: Shoukath Mohammed
+ */
 @Component({
   selector: 'bri-root',
   templateUrl: './app.component.html',

@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-
-const routes: Routes = [
+/**
+ * @author: Shoukath Mohammed
+ */
+const ROUTES: Routes = [
   {
     path: '',
     pathMatch: 'full',
@@ -16,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROUTES, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
