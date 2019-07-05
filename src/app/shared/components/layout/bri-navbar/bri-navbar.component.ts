@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 /**
  * @author: Shoukath Mohammed
@@ -8,11 +8,40 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './bri-navbar.component.html',
   styleUrls: ['./bri-navbar.component.scss']
 })
-export class BriNavbarComponent implements OnInit {
+export class BriNavbarComponent {
 
+  /**
+   * @public
+   * @type: boolean
+   * @description: flag to toggle the navbar
+   */
+  public isToggled: boolean = false;
+
+  /**
+   * @public
+   * @type: boolean
+   * @description: flag to animate the navbar
+   */
+  public isCollapsing: boolean = false;
+
+  /**
+   * @constructor
+   */
   constructor() { }
 
-  ngOnInit() {
-  }
+  /**
+   * @public
+   * @param: {e<MouseEvent>}
+   * @returns: void
+   * @description: a helper method that toggles
+   * tbe navbar view.
+   */
+  public onToggle(e: MouseEvent): void {
+    this.isCollapsing = true;
 
+    setTimeout(() => {
+      this.isCollapsing = false;
+      this.isToggled = !this.isToggled;
+    });
+  }
 }
