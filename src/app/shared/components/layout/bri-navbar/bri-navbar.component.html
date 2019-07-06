@@ -1,13 +1,17 @@
 <div class="bri-navbar pos-f-t">
     <nav class="navbar">
-        <button type="button" attr.aria-expanded="isToggled" aria-label="Toggle navigation" (click)="onToggle($event)">
+        <button class="navbar-toggler" type="button" [attr.aria-expanded]="isToggled" aria-label="Toggle navigation" (click)="onToggle($event)">
             <span class="fa fa-bars"></span>
         </button>
         <div class="bri-navbar-right float-right">
             <a href="javascript:void(0)" (click)=onThemeToggle($event)><i class="fa fa-image"></i></a>
         </div>
     </nav>
-    <aside class="bri-sidebar" [ngClass]="{'show': isToggled, 'collapsing': isCollapsing, 'collapse': !isCollapsing}">
-        Hello!
-    </aside>
+
+    <!-- Sidebar injection point -->
+    <bri-sidebar
+        [toggled]="isToggled"
+        [collapsed]="isCollapsing"
+    >
+    </bri-sidebar>
 </div>
