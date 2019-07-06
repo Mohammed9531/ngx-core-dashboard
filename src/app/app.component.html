@@ -1,8 +1,8 @@
-<div class="bri-container container-fluid">
+<div class="bri-container container-fluid" [ngClass]="{'bri-dark': isDarkTheme, 'bri-light': !isDarkTheme}">
 
   <!-- Injection point for navbar -->
   <div class="bri-navbar-container">
-    <bri-navbar></bri-navbar>
+    <bri-navbar (theme)="onThemeToggle($event)"></bri-navbar>
   </div>
 
   <!-- Injection point for angular routes -->

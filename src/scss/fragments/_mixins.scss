@@ -1,0 +1,20 @@
+/**
+ * write all your reusable methods here...
+ */
+@mixin bri-theme($bg-color, $card-color, $color) {
+    color: $color;
+    background-color: $bg-color;
+
+    .fa {
+        color: $color;
+    }
+
+    .bri-col {
+        background-color: $card-color !important;
+    }
+}
+
+@mixin bri-nav($nav-color, $color) {
+    color: $color;
+    background-color: $nav-color;
+}

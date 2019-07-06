@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BriNavbarComponent } from './shared/components/layout/bri-navbar/bri-navbar.component';
+import { BriTableComponent } from './shared/components/bri-table/bri-table.component';
 
 /**
  * @author: Shoukath Mohammed
@@ -13,6 +14,7 @@ import { BriNavbarComponent } from './shared/components/layout/bri-navbar/bri-na
   declarations: [
     AppComponent
     , BriNavbarComponent
+    , BriTableComponent
   ],
   imports: [
     BrowserModule

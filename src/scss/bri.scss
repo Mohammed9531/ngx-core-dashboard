@@ -1,3 +1,26 @@
 // start import all the global styles here
 @import 'fragments/vendor';
 @import 'fragments/base';
+@import 'fragments/mixins';
+@import 'fragments/variables';
+
+.bri-dark {
+    @include bri-theme($ash, $bri-card-dark-bg, $white);
+
+    .navbar {
+        @include bri-nav($bri-nav-dark-bg, $white)
+    }
+}
+
+.bri-light {
+    @include bri-theme($white, $bri-card-light-bg, $white);
+
+    .bri-col {
+        color: $black;
+        box-shadow: $bri-card-light-bs;
+    }
+
+    .navbar {
+        @include bri-nav($bri-nav-light-bg, $black)
+    }
+}
