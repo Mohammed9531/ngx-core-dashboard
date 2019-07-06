@@ -1,6 +1,7 @@
 
 // colors
 $black           : #000;
+$grey            : #606060;
 $white           : #fff;
 $ash             : #374148;
 $lightgrey       : #fafafa;
@@ -14,3 +15,8 @@ $bri-card-light-bs         : 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 $bri-nav-dark-bg           : $black;
 $bri-nav-light-bg          : #2d3a52;
 
+// sidebar theme
+$bri-sidebar-dark-brr      : 1px solid $grey;
+$bri-sidebar-light-bs      : transparent;
+$bri-sidebar-light-brr     : 1px solid rgba(0, 0, 0, 0.12);
+$bri-sidebar-light-bs      : 2px 0px 3px rgba(0, 0, 0, 0.22);

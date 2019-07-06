@@ -5,7 +5,9 @@
 @import 'fragments/variables';
 
 .bri-dark {
-    @include bri-theme($ash, $bri-card-dark-bg, $white);
+    @include bri-theme($ash, $bri-card-dark-bg,
+        $white, $bri-sidebar-light-bs, $bri-sidebar-dark-brr, $white
+    );
 
     .navbar {
         @include bri-nav($bri-nav-dark-bg, $white)
@@ -13,7 +15,9 @@
 }
 
 .bri-light {
-    @include bri-theme($white, $bri-card-light-bg, $white);
+    @include bri-theme($white, $bri-card-light-bg,
+        $white, $bri-sidebar-light-bs, $bri-sidebar-light-brr, $black
+    );
 
     .bri-col {
         color: $black;

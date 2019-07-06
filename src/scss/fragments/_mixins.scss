@@ -1,7 +1,7 @@
 /**
  * write all your reusable methods here...
  */
-@mixin bri-theme($bg-color, $card-color, $color) {
+@mixin bri-theme($bg-color, $card-color, $color, $sb-bs, $sb-brr, $sb-text-color) {
     color: $color;
     background-color: $bg-color;
 
@@ -11,6 +11,13 @@
 
     .bri-col {
         background-color: $card-color !important;
+    }
+
+    .bri-sidebar {
+        box-shadow: $sb-bs;
+        border-right: $sb-brr;
+        color: $sb-text-color;
+        background-color: $bg-color;
     }
 }
 
